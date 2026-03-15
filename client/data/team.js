@@ -1,0 +1,47 @@
+export const team = [
+  {
+    id: 1,
+    name: "Alex Rivera",
+    role: "Full Stack Developer",
+    bio: "Passionate full-stack developer with 4+ years of experience building scalable web applications. Specialized in React, Node.js, and cloud architecture. Loves turning complex problems into elegant, user-friendly solutions.",
+    education: "B.S. Computer Science — Stanford University",
+    avatar: "/team/alex.jpg",
+    skills: ["React", "Node.js", "AWS", "MongoDB", "TypeScript", "Docker"],
+    social: {
+      github: "https://github.com/alexrivera",
+      linkedin: "https://linkedin.com/in/alexrivera",
+      email: "alex@devteam.io",
+    },
+    githubUsername: "alexrivera",
+  },
+  {
+    id: 2,
+    name: "Sarah Chen",
+    role: "Frontend Developer",
+    bio: "Creative frontend developer who bridges the gap between design and code. Expert in crafting pixel-perfect, accessible, and performant user interfaces with modern frameworks.",
+    education: "B.S. Software Engineering — MIT",
+    avatar: "/team/sarah.jpg",
+    skills: ["React", "Next.js", "Tailwind CSS", "JavaScript", "Figma", "CSS"],
+    social: {
+      github: "https://github.com/sarahchen",
+      linkedin: "https://linkedin.com/in/sarahchen",
+      email: "sarah@devteam.io",
+    },
+    githubUsername: "sarahchen",
+  },
+  {
+    id: 3,
+    name: "Marcus Johnson",
+    role: "Backend Developer",
+    bio: "Backend engineer focused on building robust APIs, microservices, and database architectures. Experienced in Python, Node.js, and cloud infrastructure with a passion for clean, maintainable code.",
+    education: "M.S. Computer Science — Carnegie Mellon University",
+    avatar: "/team/marcus.jpg",
+    skills: ["Python", "Node.js", "Express.js", "MySQL", "Docker", "AWS"],
+    social: {
+      github: "https://github.com/marcusjohnson",
+      linkedin: "https://linkedin.com/in/marcusjohnson",
+      email: "marcus@devteam.io",
+    },
+    githubUsername: "marcusjohnson",
+  },
+];
