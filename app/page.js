@@ -1,16 +1,7 @@
 "use client";
 import Link from "next/link";
 import { FaArrowRight, FaGithub, FaExternalLinkAlt, FaCode } from "react-icons/fa";
-import {
-  SiReact,
-  SiNextdotjs,
-  SiNodedotjs,
-  SiPython,
-  SiMongodb,
-  SiTailwindcss,
-  SiDocker,
-  SiGit,
-} from "react-icons/si";
+import * as SiIcons from "react-icons/si";
 import ScrollReveal from "@/components/ScrollReveal";
 import SectionHeading from "@/components/SectionHeading";
 import ProjectCard from "@/components/ProjectCard";
@@ -22,22 +13,17 @@ import { team } from "@/data/team";
 import { testimonials } from "@/data/testimonials";
 import { services } from "@/data/services";
 import { workflow } from "@/data/workflow";
+import { skillCategories } from "@/data/skills";
 import { useState } from "react";
-
-const topSkills = [
-  { name: "React", icon: SiReact },
-  { name: "Next.js", icon: SiNextdotjs },
-  { name: "Node.js", icon: SiNodedotjs },
-  { name: "Python", icon: SiPython },
-  { name: "MongoDB", icon: SiMongodb },
-  { name: "Tailwind", icon: SiTailwindcss },
-  { name: "Docker", icon: SiDocker },
-  { name: "Git", icon: SiGit },
-];
 
 export default function Home() {
   const [selectedProject, setSelectedProject] = useState(null);
   const featuredProjects = projects.filter((p) => p.featured).slice(0, 6);
+
+  const allSkillItems = skillCategories.flatMap((category) => category.skills);
+  const uniqueSkillMap = new Map(allSkillItems.map((skill) => [skill.name, skill]));
+  const displayedSkills = Array.from(uniqueSkillMap.values()).slice(0, 12);
+  const teamRoles = [...new Set(team.map((member) => member.role))];
 
   return (
     <div className="page-enter">
@@ -193,14 +179,27 @@ export default function Home() {
             subtitle="The modern technologies we use to build powerful applications."
           />
           <div className="skills-preview-grid">
-            {topSkills.map((skill, i) => (
-              <ScrollReveal key={skill.name} delay={i * 60}>
-                <div className="skills-preview-item">
-                  <skill.icon />
-                  {skill.name}
-                </div>
-              </ScrollReveal>
-            ))}
+            {displayedSkills.map((skill, i) => {
+              const Icon = SiIcons[skill.icon];
+              return (
+                <ScrollReveal key={skill.name} delay={i * 60}>
+                  <div className="skills-preview-item">
+                    {Icon && <Icon />}
+                    {skill.name}
+                  </div>
+                </ScrollReveal>
+              );
+            })}
+          </div>
+          <div className="roles-preview" style={{ marginTop: "24px" }}>
+            <h4>Team Roles</h4>
+            <div className="roles-grid">
+              {teamRoles.map((role) => (
+                <span key={role} className="role-pill">
+                  {role}
+                </span>
+              ))}
+            </div>
           </div>
           <div style={{ textAlign: "center", marginTop: "40px" }}>
             <Link href="/skills" className="btn btn-secondary">

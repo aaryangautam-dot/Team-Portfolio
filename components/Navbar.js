@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useTheme } from "./ThemeProvider";
 import { HiSun, HiMoon, HiMenu, HiX } from "react-icons/hi";
@@ -34,9 +35,7 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="navbar-container">
         <Link href="/" className="navbar-logo">
-          <span className="logo-bracket">&lt;</span>
-          DevTeam
-          <span className="logo-bracket"> /&gt;</span>
+        <Image src="/Logo.png" alt="DevTeam Badge" width={100} height={40}/>
         </Link>
 
         <div className={`navbar-links ${menuOpen ? "open" : ""}`}>

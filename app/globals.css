@@ -929,6 +929,10 @@ h4 { font-size: 1.125rem; }
   padding: 36px 28px;
   transition: all var(--transition-base);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .service-card:hover {
@@ -973,21 +977,41 @@ h4 { font-size: 1.125rem; }
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
-  padding: 32px;
+  padding: 28px;
   transition: all var(--transition-base);
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 280px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  align-items: stretch;
+}
+
+.testimonial-quote {
+  margin-bottom: 18px;
 }
 
 .testimonial-card::before {
   content: '"';
   position: absolute;
-  top: 16px;
-  right: 24px;
-  font-size: 4rem;
+  top: 12px;
+  right: 12px;
+  font-size: 3.4rem;
   line-height: 1;
   color: var(--accent-primary);
-  opacity: 0.15;
+  opacity: 0.12;
   font-family: Georgia, serif;
+  z-index: 0;
+}
+
+.testimonial-card {
+  overflow: hidden;
 }
 
 .testimonial-card:hover {
@@ -1650,6 +1674,31 @@ h4 { font-size: 1.125rem; }
   font-size: 1.3rem;
   color: var(--accent-primary);
 }
+
+.roles-preview h4 {
+  margin-bottom: 12px;
+  font-size: 1rem;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+.roles-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.role-pill {
+  padding: 8px 14px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
 
 /* ===== PAGE HEADER (for sub-pages) ===== */
 .page-header {

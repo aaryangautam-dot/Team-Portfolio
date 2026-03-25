@@ -1,34 +1,34 @@
 export const testimonials = [
   {
     id: 1,
-    name: "Dr. Emily Watson",
-    role: "Professor of Computer Science",
+    name: "Ananya Sharma",
+    role: "Product Lead, Swiggy Biz",
     quote:
-      "One of the most talented development teams I've had the pleasure of working with. Their technical skills are matched only by their professionalism and dedication to delivering exceptional results.",
+      "The team helped us launch a regional delivery dashboard with smooth UX and minimal latency. Their localization knowledge made rollout easy and fast.",
     avatar: "/testimonials/emily.jpg",
   },
   {
     id: 2,
-    name: "James Park",
-    role: "CEO, TechVenture Inc.",
+    name: "Raghav Patel",
+    role: "Founder, CampusCare Solutions",
     quote:
-      "They transformed our vision into reality. The dashboard they built handles millions of data points seamlessly. Highly recommend for any project requiring top-tier development talent.",
+      "They took our campus services platform from concept to production with strong reliability. Their supply chain integration was excellent and saved us months of work.",
     avatar: "/testimonials/james.jpg",
   },
   {
     id: 3,
-    name: "Lisa Martinez",
-    role: "Product Manager, InnoSoft",
+    name: "Meera Iyer",
+    role: "Head of Digital, MilkBasket",
     quote:
-      "Working with this team was an incredible experience. They understood our requirements perfectly and delivered ahead of schedule with impeccable code quality.",
+      "As a growing consumer brand, we needed consistent quality and low-latency performance. They delivered both through careful engineering and proactive communication.",
     avatar: "/testimonials/lisa.jpg",
   },
   {
     id: 4,
-    name: "Robert Kim",
-    role: "CTO, DataFlow Systems",
+    name: "Vikram Singh",
+    role: "CTO, Zepto Tech",
     quote:
-      "Their API architecture was exactly what we needed — clean, well-documented, and built to scale. The team's communication throughout the project was outstanding.",
+      "Their scalable API design helped us handle sudden festival-time spikes smoothly. This team has a keen understanding of fast-commerce requirements in India.",
     avatar: "/testimonials/robert.jpg",
   },
 ];

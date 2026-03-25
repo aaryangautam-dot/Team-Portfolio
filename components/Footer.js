@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { FaGithub, FaLinkedin, FaEnvelope, FaArrowUp } from "react-icons/fa";
 
 const quickLinks = [
@@ -25,9 +26,7 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-brand">
             <Link href="/" className="navbar-logo">
-              <span className="logo-bracket">&lt;</span>
-              DevTeam
-              <span className="logo-bracket"> /&gt;</span>
+              <Image src="/Logo.png" alt="DevTeam Badge" width={100} height={40}/>
             </Link>
             <p>
               Building modern, scalable web applications with cutting-edge
@@ -35,7 +34,7 @@ export default function Footer() {
             </p>
             <div className="footer-social">
               <a
-                href="https://github.com/devteam"
+                href="https://github.com/aaryangautam-dot/Team-Portfolio"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
@@ -43,14 +42,14 @@ export default function Footer() {
                 <FaGithub />
               </a>
               <a
-                href="https://linkedin.com/company/devteam"
+                href="https://www.linkedin.com/in/dev-tyagi-64030b1a5"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
               >
                 <FaLinkedin />
               </a>
-              <a href="mailto:team@devteam.io" aria-label="Email">
+              <a href="mailto:tyagidev574@gmail.com" aria-label="Email">
                 <FaEnvelope />
               </a>
             </div>
@@ -82,7 +81,7 @@ export default function Footer() {
             <h4>Contact</h4>
             <ul>
               <li>
-                <a href="mailto:team@devteam.io">team@devteam.io</a>
+                <a href="mailto:team@devteam.io">tyagidev574@gmail.com</a>
               </li>
               <li>
                 <a

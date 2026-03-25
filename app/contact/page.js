@@ -110,7 +110,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="contact-info-label">Email</p>
-                    <p className="contact-info-value">team@devteam.io</p>
+                    <p className="contact-info-value">tyagidev574@gmail.com</p>
                   </div>
                 </div>
 
@@ -121,13 +121,13 @@ export default function ContactPage() {
                   <div>
                     <p className="contact-info-label">GitHub</p>
                     <a
-                      href="https://github.com/devteam"
+                      href="https://github.com/aaryangautam-dot/Team-Portfolio"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="contact-info-value"
                       style={{ color: "var(--accent-primary)" }}
                     >
-                      github.com/devteam
+                      https://github.com/aaryangautam-dot/Team-Portfolio
                     </a>
                   </div>
                 </div>
@@ -139,13 +139,13 @@ export default function ContactPage() {
                   <div>
                     <p className="contact-info-label">LinkedIn</p>
                     <a
-                      href="https://linkedin.com/company/devteam"
+                      href="https://www.linkedin.com/in/dev-tyagi-64030b1a5"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="contact-info-value"
                       style={{ color: "var(--accent-primary)" }}
                     >
-                      linkedin.com/company/devteam
+                      https://www.linkedin.com/in/dev-tyagi-64030b1a5
                     </a>
                   </div>
                 </div>
