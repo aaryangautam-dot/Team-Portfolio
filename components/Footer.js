@@ -81,7 +81,7 @@ export default function Footer() {
             <h4>Contact</h4>
             <ul>
               <li>
-                <a href="mailto:team@devteam.io">tyagidev574@gmail.com</a>
+                <a href="mailto:team@looporg.io">contact@looporg.io</a>
               </li>
               <li>
                 <a
@@ -97,7 +97,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} DevTeam. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Loop Org. All rights reserved.</p>
           <button
             className="back-to-top"
             onClick={scrollToTop}

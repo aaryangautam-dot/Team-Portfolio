@@ -11,7 +11,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "DevTeam — Building Modern & Scalable Web Applications",
+  title: "Loop Org — Building Modern & Scalable Web Applications",
   description:
     "We are a team of three passionate developers specializing in full-stack web applications, API development, UI/UX design, and cloud deployment.",
   keywords: [

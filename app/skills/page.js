@@ -5,7 +5,7 @@ import SkillCard from "@/components/SkillCard";
 import SectionHeading from "@/components/SectionHeading";
 
 export const metadata = {
-  title: "Skills — DevTeam",
+  title: "Skills — Loop Org",
   description:
     "Explore our technical expertise across frontend, backend, databases, and tools. We use modern technologies to build production-ready applications.",
 };

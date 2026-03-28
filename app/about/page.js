@@ -3,9 +3,9 @@ import TeamCard from "@/components/TeamCard";
 import SectionHeading from "@/components/SectionHeading";
 
 export const metadata = {
-  title: "About — DevTeam",
+  title: "About — Loop Org",
   description:
-    "Meet the three developers behind DevTeam. Learn about our skills, experience, and passion for building exceptional web applications.",
+    "Meet the three developers behind Loop Org. Learn about our skills, experience, and passion for building exceptional web applications.",
 };
 
 export default function AboutPage() {

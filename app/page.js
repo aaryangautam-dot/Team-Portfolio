@@ -78,7 +78,7 @@ export default function Home() {
                   </div>
                   <div className="code-line">
                     <span className="code-comment">
-                      {"// Welcome to DevTeam"}
+                      {"// Welcome to Loop Org"}
                     </span>
                   </div>
                   <div className="code-line">
